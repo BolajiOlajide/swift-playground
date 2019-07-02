@@ -4,5 +4,6 @@
         <page name='switch'/>
         <page name='basics'/>
         <page name='loops'/>
+        <page name='functions'/>
     </pages>
 </playground>
