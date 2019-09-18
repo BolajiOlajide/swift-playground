@@ -6,5 +6,6 @@
         <page name='loops'/>
         <page name='functions'/>
         <page name='classes'/>
+        <page name='optionals'/>
     </pages>
 </playground>
