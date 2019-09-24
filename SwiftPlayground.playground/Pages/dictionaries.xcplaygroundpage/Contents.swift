@@ -20,3 +20,7 @@ airportCodes["DUB"] = nil
 airportCodes.removeValue(forKey: "CDG")
 
 airportCodes
+
+// dealing with non-existent data
+let message = airportCodes["DXB"]
+let message2 = airportCodes["MAS"]
