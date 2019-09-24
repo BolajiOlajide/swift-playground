@@ -6,6 +6,8 @@
         <page name='loops'/>
         <page name='functions'/>
         <page name='classes'/>
-        <page name='optionals'/>
+        <page name='types'/>
+        <page name='string-interpolation'/>
+        <page name='operators'/>
     </pages>
 </playground>
