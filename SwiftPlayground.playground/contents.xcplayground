@@ -9,5 +9,7 @@
         <page name='types'/>
         <page name='string-interpolation'/>
         <page name='operators'/>
+        <page name='CollectionsControlFlow'/>
+        <page name='dictionaries'/>
     </pages>
 </playground>
