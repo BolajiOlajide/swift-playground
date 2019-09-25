@@ -35,3 +35,10 @@ func carpetCostHaving(length: Int, width: Int, carpetColor color: String = "tan"
 let result = carpetCostHaving(length: 10, width: 10)
 let price = result.price // result.price also gives the same result
 let color = result.1 // result.carpetColor since that's the external name specified in our func
+
+// create a function w/o a named parameter
+func someFunc(_ word: String) {
+    print(word)
+}
+
+someFunc("hello")

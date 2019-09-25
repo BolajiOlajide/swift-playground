@@ -15,5 +15,6 @@
         <page name='switch-exercise'/>
         <page name='fizzbuzz'/>
         <page name='funcs'/>
+        <page name='func-exercise'/>
     </pages>
 </playground>
