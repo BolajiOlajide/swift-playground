@@ -14,5 +14,6 @@
         <page name='control-flow'/>
         <page name='switch-exercise'/>
         <page name='fizzbuzz'/>
+        <page name='funcs'/>
     </pages>
 </playground>
