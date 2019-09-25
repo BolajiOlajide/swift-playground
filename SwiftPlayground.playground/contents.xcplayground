@@ -12,5 +12,7 @@
         <page name='CollectionsControlFlow'/>
         <page name='dictionaries'/>
         <page name='control-flow'/>
+        <page name='switch-exercise'/>
+        <page name='fizzbuzz'/>
     </pages>
 </playground>
