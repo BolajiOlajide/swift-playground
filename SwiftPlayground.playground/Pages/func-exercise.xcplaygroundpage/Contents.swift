@@ -12,7 +12,6 @@
 
 // Enter your code below
 func coordinates(for location: String) -> (lat: Double, long: Double) {
-    
     switch location {
     case "Eiffel Tower": return (48.8582, 2.2945)
     case "Great Pyramid": return (29.9792, 31.1344)
