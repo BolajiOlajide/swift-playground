@@ -17,5 +17,7 @@
         <page name='funcs'/>
         <page name='func-exercise'/>
         <page name='ObjectOrientedSwift'/>
+        <page name='classes-inheritance'/>
+        <page name='EnumsOptionals'/>
     </pages>
 </playground>
