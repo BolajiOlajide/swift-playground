@@ -91,8 +91,41 @@ robot.move(Direction.up)
 print(robot.location.y)
 
 // end of exercise
+import UIKit
 
 enum ColorComponent {
-    case rgb
-    case hsb
+//    case rgb(Float, Float, Float, Float) // this works too
+    case rgb(red: Float, green: Float, blue: Float, alpha: Float)
+    case hsb(hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)
+    
+    func color() -> UIColor {
+        switch self {
+        case .rgb(let red, let green, let blue, let alpha):
+            return UIColor(_colorLiteralRed: red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha)
+        case .hsb(let hue, let saturation, let brightness, let alpha):
+            return UIColor(hue: hue/360.0, saturation: saturation/100.0, brightness: brightness/100.0, alpha: alpha)
+        }
+    }
 }
+
+ColorComponent.rgb(red: 61.0, green: 120.0, blue: 198.0, alpha: 1.0).color()
+
+// exercise
+enum BarButton {
+    case done(title: String)
+    case edit(title: String)
+  
+  func button() -> UIBarButtonItem {
+    switch self {
+      case .done(let title):
+        return UIBarButtonItem(title: title, style: .done, target: nil, action: nil)
+      case .edit(let title):
+        return UIBarButtonItem(title: title, style: .plain, target: nil, action: nil)
+    }
+  }
+}
+
+let done = BarButton.done(title: "Save")
+let button = done.button()
+
+let someButton = UIBarButtonItem(title: "A Title", style: .plain, target: nil, action: nil)
