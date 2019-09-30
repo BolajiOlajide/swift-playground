@@ -23,5 +23,6 @@
         <page name='guard'/>
         <page name='optionalChaining'/>
         <page name='patternmatching'/>
+        <page name='nil-coalescing operator'/>
     </pages>
 </playground>
