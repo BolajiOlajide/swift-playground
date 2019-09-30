@@ -36,3 +36,31 @@ if let dailyWeather = weatherDictionary["daily"], let highTemperature = dailyWea
 // downsides to using if..let
 // can get too bulky
 
+// early exit
+struct Friend {
+    let name: String
+    let age: String
+    let address: String?
+    
+    // failable initializer
+//    init?(friendDictionary: [String: String]) {
+//        return nil
+//    }
+}
+
+func new(friendDictionary: [String: String]) -> Friend? {
+    if let name = friendDictionary["name"], let age = friendDictionary["age"] {
+        let address = friendDictionary["address"]
+        return Friend(name: name, age: age, address: address)
+    } else {
+        return nil
+    }
+}
+
+func newFriend(friendDictionary: [String: String]) -> Friend? {
+    guard let name = friendDictionary["name"], let age = friendDictionary["age"] else {
+        return nil
+    }
+    let address = friendDictionary["address"]
+    return Friend(name: name, age: age, address: address)
+}

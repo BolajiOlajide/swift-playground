@@ -129,3 +129,47 @@ let done = BarButton.done(title: "Save")
 let button = done.button()
 
 let someButton = UIBarButtonItem(title: "A Title", style: .plain, target: nil, action: nil)
+
+/*
+ RAW VALUES
+ 
+ The type declaration is for the raw value
+ */
+enum Coin: Double {
+    case penny = 0.01
+    case nickel = 0.05
+    case dime = 0.1
+    case quarter = 0.25
+}
+
+func sum(having coins: [Coin]) -> Double {
+    var total: Double = 0
+    
+    for coin in coins {
+        total += coin.rawValue
+    }
+    
+    return total
+}
+
+let myCoins: [Coin] = [.penny, .nickel, .dime, .dime, .quarter, .quarter, .quarter]
+print(sum(having: myCoins))
+
+enum HTTPStatusCode: Int {
+    case ok = 200
+    case forbidden = 403
+    case unauthorized = 401
+    case notFound = 404
+}
+
+let statusCode = 200
+let httpStatus = HTTPStatusCode(rawValue: statusCode)
+
+enum Compass: Int {
+  case north = 1
+  case south
+  case east
+  case west
+}
+
+let direction = Compass(rawValue: 2) // should equal south

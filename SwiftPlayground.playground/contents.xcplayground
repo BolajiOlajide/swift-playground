@@ -19,5 +19,9 @@
         <page name='ObjectOrientedSwift'/>
         <page name='classes-inheritance'/>
         <page name='optionals'/>
+        <page name='Enums'/>
+        <page name='guard'/>
+        <page name='optionalChaining'/>
+        <page name='patternmatching'/>
     </pages>
 </playground>
