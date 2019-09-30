@@ -18,6 +18,6 @@
         <page name='func-exercise'/>
         <page name='ObjectOrientedSwift'/>
         <page name='classes-inheritance'/>
-        <page name='EnumsOptionals'/>
+        <page name='optionals'/>
     </pages>
 </playground>
