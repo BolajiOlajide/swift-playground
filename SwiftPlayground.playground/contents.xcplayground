@@ -26,5 +26,6 @@
         <page name='nil-coalescing operator'/>
         <page name='protocols'/>
         <page name='random'/>
+        <page name='ErrorHandling'/>
     </pages>
 </playground>
